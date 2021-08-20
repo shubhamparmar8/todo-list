@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(8),
   },
   title: {
     fontWeight: theme.typography.fontWeightMedium,
@@ -106,7 +107,7 @@ const App = () => {
       setText("");
     } else {
       const newItem = { id: v4(), title: text };
-      setList([...list, newItem]);
+      setList([newItem, ...list]);
       showAlert(true, "Item added", "success");
       setText("");
     }

@@ -7,8 +7,8 @@
 body {
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   color: white !important;
-  height: 100vh;
-  overflow-y: hidden;
+  min-height: 100vh;
+  overflow-y: auto;
   font-family: "Quicksand";
 }
 
